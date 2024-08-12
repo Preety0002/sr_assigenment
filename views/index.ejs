@@ -1,0 +1,156 @@
+ <%- include("./partial/header")%>
+
+ <style>
+  body {
+      background-color: #3b3b3c00; 
+      padding-top: 56px; 
+  }
+  .hero-section {
+      background-color: whitesmoke; 
+      text-align: center;
+      padding: 60px 15px;
+     
+  }
+  .hero-section h2 {
+      font-size: 3rem;
+      color: #343a40; 
+  }
+  .hero-section h1 {
+      font-size: 4rem;
+      color: #007bff;
+    
+  }
+  .hero-section p {
+      font-size: 1.25rem;
+      color: #6c757d; 
+      margin-bottom: 30px;
+  }
+  .hero-section button {
+      background-color: #007bff; 
+      color: white; 
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.25rem;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .hero-section button:hover {
+      background-color: #0056b3; 
+  }
+
+  .carousel-slide {
+            padding: 30px;
+            background: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            color: white;
+        }
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 50%;
+        }
+        .contact-form input, .contact-form textarea {
+            border: 1px solid #ced4da;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #80bdff;
+            box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .25);
+        }
+
+
+  @media (min-width: 768px) {
+            .hero-section h2 {
+                font-size: 3rem;
+            }
+            .hero-section h1 {
+                font-size: 4rem;
+            }
+            .hero-section p {
+                font-size: 1.25rem;
+            }
+            .hero-section button {
+                font-size: 1.25rem;
+            }
+        }
+    
+</style>
+</head>
+
+ <%- include("./partial/nav")%> 
+
+   
+    <div class="hero-section">
+      <h2>BRAND<b>MARK</b></h2>
+      <h1>Create a unique, professional <br> logo for your business</h1>
+      <p>Kickstart your brand with business card designs, social media graphics, <br> app icons, letterheads, and more</p>
+      <button>Create my logo</button>
+  </div>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center text-3xl font-weight-bold mb-5">What Our Clients Say</h2>
+        <div id="carouselExampleControls" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-slide">
+                        <p class="text-lg mb-4">“The logo design was fantastic! It perfectly captures the essence of our brand.”</p>
+                        <p class="font-weight-bold">- Client A</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-slide">
+                        <p class="text-lg mb-4">“Professional service and a stunning design. Highly recommend!”</p>
+                        <p class="font-weight-bold">- Client B</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-slide">
+                        <p class="text-lg mb-4">“Excellent work and great communication. We are thrilled with the results!”</p>
+                        <p class="font-weight-bold">- Client C</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center text-3xl font-weight-bold mb-5">Get In Touch</h2>
+        <form action="/submit" method="post" class="contact-form mx-auto max-w-md">
+            <div class="form-group">
+                <label for="name" class="font-weight-bold">Name</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="font-weight-bold">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="font-weight-bold">Message</label>
+                <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+      <%- include("./partial/footer")%> 
+
+     

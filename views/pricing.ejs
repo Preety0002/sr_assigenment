@@ -1,0 +1,77 @@
+<%- include("./partial/header")%>
+
+<style>
+   
+        body {
+            background-color: #f8f9fa;
+            padding-top: 56px;
+        }
+        .main-content {
+            background-color: #ffffff;
+            padding: 40px 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+        }
+        .main-content h1 {
+            font-size: 2rem;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+        .pricing-card {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .pricing-card .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .pricing-card p {
+            margin-bottom: 20px;
+        }
+        .pricing-card button {
+            background-color: #007bff;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .pricing-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+
+
+<%- include("./partial/nav")%> 
+
+<div class="container my-5">
+    <div class="main-content">
+        <div class="pricing-card">
+            <h3>Standard Plan</h3>
+            <p class="price">$49/month</p>
+            <p>50 GB Storage | 500 GB Bandwidth | Priority Support</p>
+            <button>Get Started</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<%- include("./partial/footer")%> 
